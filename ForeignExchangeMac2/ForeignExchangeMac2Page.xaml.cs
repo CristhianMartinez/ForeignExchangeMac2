@@ -22,7 +22,7 @@ namespace ForeignExchangeMac2
 			if (!decimal.TryParse(PesosEntry.Text, out pesos))
 			{
 				DisplayAlert("Error", "You must enter a value numeric in Pesos", "Acept");
-				PesosEntry.Text = "";
+				PesosEntry.Text = null;
 				return;
 			}
 
